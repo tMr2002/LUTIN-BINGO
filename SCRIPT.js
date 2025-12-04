@@ -1,7 +1,7 @@
 
 / LUTIN – Bingo enfants
 (function() {
-  // URL de l'application (modifiez cette valeur après déploiement)
+  // https://tmr2002.github.io/LUTIN-BINGO/
   const APP_URL = 'https://lutin-bingo.example.com';
 
   // Affichage du QR code via un service d'image public
