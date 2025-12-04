@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUTIN – Bingo enfants</title>
+  <!-- Police ludique -->
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap
+  styles.css
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo" aria-hidden="true">🎄🧝</div>
+    <h1 class="title">LUTIN</h1>
+    <p class="subtitle">Bingo joyeux pour les enfants – gros boutons circulaires</p>
+  </header>
+
+  <main class="container">
+    <!-- QR vers l'application en ligne -->
+    <section class="qr-section" aria-labelledby="qr-title">
+      <h2 id="qr-title">Scanne-moi pour jouer en ligne</h2>
+      <div class="qr-card">
+        <div id="qrImageContainer" class="qr-image" role="img" aria-label="Code QR vers l'application LUTIN"></div>
+        <p class="qr-link">Lien direct : #</a></p>
+      </div>
+      <p class="hint">Astuce : remplacez l'URL dans <code>script.js</code> par l'adresse où vous hébergerez l'application (ex. GitHub Pages).</p>
+    </section>
+
+    <!-- Contrôles du boulier -->
+    <section class="controls" aria-labelledby="controls-title">
+      <h2 id="controls-title">Boulier virtuel</h2>
+      <div class="controls-row">
+        <label for="variant">Type de bingo :</label>
+        <select id="variant" aria-label="Choisir le type de bingo">
+          <option value="75" selected>Américain (1–75)</option>
+          <option value="90">Britannique (1–90)</option>
+        </select>
+        <button id="newGameBtn" class="btn primary">Nouvelle partie</button>
+      </div>
+      <div class="controls-row">
+        <button id="drawBtn" class="btn draw">Tirer une boule</button>
+        <button id="undoBtn" class="btn">Annuler le dernier tirage</button>
+        <button id="resetBtn" class="btn">Réinitialiser</button>
+      </div>
+      <div class="boulier">
+        <div id="currentBall" class="ball" aria-live="polite" aria-atomic="true">—</div>
+        <div class="history">
+          <h3>Historique des boules tirées</h3>
+          <div id="historyList" class="history-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grille des numéros avec gros boutons circulaires -->
+    <section class="grid-section" aria-labelledby="grid-title">
+      <h2 id="grid-title">Grille des numéros</h2>
+      <div id="labels" class="labels"></div>
+      <div id="numberGrid" class="grid" role="grid" aria-label="Boutons des numéros de bingo"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Thème LUTIN • Fait pour s'amuser 🎁</p>
+  </footer>
+
+  script.js</script>
+</body>
+</html>
